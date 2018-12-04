@@ -39,6 +39,15 @@ def new_fun():
 	
 	
 	#Adding new row: For this flip the rows and columns and add new column
+	df_temp=df.T
+	#print(df_temp)
+	#print("\n")
+	
+	df_temp[6]=[7,"new st","new city","new state","new country","new name",12,"new_value"]
+	df = df_temp.T
+	print(df)
+	print("\n")
+	
 	
 if __name__=="__main__":
 	new_fun()
